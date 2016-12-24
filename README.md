@@ -14,7 +14,7 @@ homebrew.
 * SEEPROM redirection to/from SD card.
 * OTP redirection from SD card for a custom launch image; upon load of the custom firmware if it exists on sd card (sd:/wiiu/apps/mocha/launch_image.tga)
 
-**Frappuccino Features**
+**Frappuccino Planned Features**
 * Custom fw.img support (IMG not provided, and custom as in modifications will be allowed) 
 * Allows the injection for Virtual Console
 * Disables and patches signiture checks, to allow custom Applications (Already integrated into the application) 
