@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>Frappuccino CFW Traducido</name>
+  <coder>Samuel</coder>
+  <version>0.2</version>
+  <release_date>20161214/release_date>
+  <short_description>Un CFW</short_description>
+-e   <long_description>Un Custom Firmware para Wii U
+sin necesidad de un fw.bin en la sd.
+</long_description>
+  <category>cfw</category>
+  <url>https://github.com/Xpl0itU/Frappuccino-CFW</url>
+</app>
