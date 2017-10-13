@@ -46,13 +46,11 @@ struct {
     const char *disabled;
 } selection_options[] =
 {
-    { "Config view mode", "expert", "default" },
-    { "Skip this menu on launch", "on", "off" },
-    { "Show launch image", "on", "off" },
+    { "Mostrar este menu", "on", "off" },
+    { "Mostrar imagen de carga", "on", "off" },
     { "redNAND", "on", "off" },
-    { "SEEPROM redirection", "on", "off" },
-    { "OTP redirection", "on", "off" },
-    { "Use syshax.xml (coldboothax)", "on", "off" },
+    { "Redireccion SEEPROM", "on", "off" },
+    { "Redireccion OTP", "on", "off" },
 	{ "Allow system modifications", "yes", "no" },
 	{ "Enable Cheat Injection", "yes", "no" },
 	{ "Enable Mod Injection", "yes", "no" },
@@ -248,12 +246,11 @@ int ShowMenu(cfw_config_t * currentConfig)
             OSScreenClearBufferEx(0, 0);
             OSScreenClearBufferEx(1, 0);
 
-            console_print_pos(x_offset, 1, "-- Frappuccino CFW %s by Dr.Hacknik --", APP_VERSION);
+            console_print_pos(x_offset, 1, "-- Frappuccino CFW %s Traducido --", APP_VERSION);
 
-            console_print_pos(x_offset, 3, "Select your option(s) and press A to launch.");
-            console_print_pos(x_offset, 4, "Press HOME to exit back to HBL.");
-            console_print_pos(x_offset, 5, "Press & Hold B upon start to force open this menu");
-		    console_print_pos(x_offset, 6, "Press X to view the advanced menu");
+            console_print_pos(x_offset, 3, "Selecciona la(s) opcion(es) y dale a la A)");
+            console_print_pos(x_offset, 4, "Dale al boton home prar volver a HBL.");
+            console_print_pos(x_offset, 5, "Manten pulsado B para ver este menu.");
 
             int y_offset = 7;
             int option_count = sizeof(selection_options) / sizeof(selection_options[0]);
@@ -266,9 +263,9 @@ int ShowMenu(cfw_config_t * currentConfig)
                                   TEXT_SEL(configPtr[idx], "<", " "), selection_options[idx].enabled,  TEXT_SEL(configPtr[idx], ">", " "),
                                   TEXT_SEL(configPtr[idx], " ", "<"), selection_options[idx].disabled, TEXT_SEL(configPtr[idx], " ", ">"));
             }
-			console_print_pos(x_offset, 15, "Original Work by Dimok. This is a forked version of  CFW.");
-            console_print_pos(x_offset, 16, "Credits go to everyone who contributed to Wii U scene publicly.");
-            console_print_pos(x_offset, 17, "Special thanks to smealum, plutoo, yellows8, naehrwert and derrek.");
+			console_print_pos(x_offset, 15, "Trabajo original de dimok,esto solo es un fork traducido.");
+            console_print_pos(x_offset, 16, "Los creditos van a todos los que contribuyeron publicamente a la scene de wii u.");
+            console_print_pos(x_offset, 17, "Si quieres que saque mas homebre traducido dale like al post y comenta cual quieres que sea el siguiente"); 
 
             // Flip buffers
             OSScreenFlipBuffersEx(0);
