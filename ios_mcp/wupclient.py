@@ -6,6 +6,8 @@ import sys
 import struct
 from time import sleep
 
+console_ip = input("Please enter the IP address of your Wii U: ")
+
 def buffer(size):
     return bytearray([0x00] * size)
 
@@ -26,7 +28,7 @@ def get_string(buffer, offset):
 class wupclient:
     s=None
 
-    def __init__(self, ip='192.168.178.23', port=1337):
+    def __init__(self, ip=console_ip, port=1337):
         self.s=socket.socket()
         self.s.connect((ip, port))
         self.fsa_handle = None
@@ -749,7 +751,7 @@ if __name__ == '__main__':
     # w.up("/media/harddisk1/gx2sploit/gx2sploit.rpx", "homebrew_launcher_rpx.rpx")
     # print(w.pwd())
     # w.ls()
-    w.dump_syslog()
+    # w.dump_syslog()
     # w.mkdir("/vol/storage_sdcard/usr", 0x600)
     # install_title("install", 1)
     # get_nim_status()
