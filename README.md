@@ -8,12 +8,10 @@ It also combines all current features of a custom firmware such as sysNAND or re
 patches into one application with a configuration setting.  
 It allows homebrew to access the entire filesystem.
 
-# Credits:
+# Original Credits:
 Dimok  
 gudenaurock  
 AboodXD  
-
-# Special thanks to:
 smealum  
 plutoo  
 yellows8  
