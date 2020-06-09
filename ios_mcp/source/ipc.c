@@ -351,6 +351,15 @@ static int ipc_ioctl(ipcmessage *message)
         message->ioctl.buffer_io[0] = FSA_Remove(fd, path);
         break;
     }
+    case IOCTL_FSA_RENAME:
+    {
+        int fd = message->ioctl.buffer_in[0];
+        char *oldpath = ((char *)message->ioctl.buffer_in) + message->ioctl.buffer_in[1];
+        char *newpath = ((char *)message->ioctl.buffer_in) + message->ioctl.buffer_in[2];
+
+        message->ioctl.buffer_io[0] = FSA_Rename(fd, oldpath, newpath);
+        break;
+    }
     case IOCTL_FSA_REWINDDIR:
     {
         int fd = message->ioctl.buffer_in[0];

@@ -49,6 +49,7 @@ int FSA_CloseFile(int fd, int fileHandle);
 int FSA_SetPosFile(int fd, int fileHandle, u32 position);
 int FSA_GetStat(int fd, char *path, fileStat_s* out_data);
 int FSA_Remove(int fd, char *path);
+int FSA_Rename(int fd, char *oldpath, char *newpath);
 int FSA_ChangeMode(int fd, char *path, int mode);
 
 int FSA_RawOpen(int fd, char* device_path, int* outHandle);
