@@ -1,13 +1,11 @@
-# mocha
-Mocha CFW - The sweet chocolate to your latte!
+# Mocha CFW
+Mocha CFW is a custom firmware for the Wii U that is derived from iosuhax, offering all its features, plus some addional ones without needing a "fw.img" file on the console's SD.
+It combines all features of a custom firmware such as sysNAND or redNAND with signature patches into one application with a configuration setting, and allows homebrew to access the entire filesystem.
 
-Mocha SE aims to combine the features from all Mocha CFW forks, plus some extra quality-of-life changes.
+# MSE
+Mocha Second Edition, or MSE for short, is a project aiming to combine all Mocha CFW versions, adding some extra quality-of-life changes and features from all the different forks and releases.
 
-Mocha CFW itself is a custom firmware, derived from iosuhax, which offers all features of iosuhax and some addional features without the requirement of a fw.img on the SD card.  
-It combines all current features of a custom firmware such as sysNAND or redNAND with signature patches into one application with a configuration setting.  
-It  also allows homebrew to access the entire filesystem.
-
-# Original Credits:
+# Special thanks to:
 Dimok  
 gudenaurock  
 AboodXD  
